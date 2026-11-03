@@ -14,40 +14,17 @@ import {
   Search, 
   X, 
   Clock, 
-  Sparkles,
-  Server,
-  Lock,
-  Flame,
-  ChevronRight
+  Sparkles, 
+  Server, 
+  Lock, 
+  Flame, 
+  ChevronRight 
 } from 'lucide-react';
 import { GAMES } from '@/data/games';
+import LiveApiInspectorModal from '@/components/telemetry/LiveApiInspectorModal';
 
 export default function DigitalStoreHero() {
   const [isVerifyModalOpen, setIsVerifyModalOpen] = useState(false);
-  const [searchOrderId, setSearchOrderId] = useState('');
-  const [lookupResult, setLookupResult] = useState<null | {
-    id: string;
-    game: string;
-    status: string;
-    timestamp: string;
-    method: string;
-    amount: string;
-    deliveryTime: string;
-  }>(null);
-
-  const handleVerifyOrder = (e: React.FormEvent) => {
-    e.preventDefault();
-    const id = searchOrderId.trim() || 'TOPUP_BD_882914';
-    setLookupResult({
-      id: id.toUpperCase(),
-      game: 'Free Fire 610 Diamonds Direct API',
-      status: 'DISPATCHED_TO_SERVER',
-      timestamp: '2026-10-29 08:14:22 UTC+6',
-      method: 'bKash / TransFi Automated Settlement',
-      amount: '৳430 BDT',
-      deliveryTime: '34 Seconds',
-    });
-  };
 
   return (
     <>
@@ -70,8 +47,8 @@ export default function DigitalStoreHero() {
                 Official API Distribution Network in Bangladesh
               </span>
               <span className="hidden sm:inline-block text-slate-500">|</span>
-              <span className="hidden sm:inline-flex items-center text-[10px] text-cyan-400 font-mono">
-                <Activity className="w-3 h-3 mr-1" /> TransFi Rail: Operational
+              <span className="hidden sm:inline-flex items-center text-[10px] text-cyan-400 font-sans font-medium">
+                <Activity className="w-3 h-3 mr-1" /> Multi-Gateway S2S Rail: Active
               </span>
             </div>
 
@@ -109,7 +86,7 @@ export default function DigitalStoreHero() {
               >
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>Verify Instant Delivery</span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-sans font-bold">
                   Live API
                 </span>
               </button>
@@ -239,107 +216,10 @@ export default function DigitalStoreHero() {
       </section>
 
       {/* Live Compliance & Order Verification Modal */}
-      {isVerifyModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="relative w-full max-w-lg rounded-3xl bg-[#121824] border border-[#1F293D] p-6 sm:p-8 shadow-2xl space-y-6 text-slate-100">
-            {/* Close Button */}
-            <button
-              onClick={() => {
-                setIsVerifyModalOpen(false);
-                setLookupResult(null);
-              }}
-              className="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/60 transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            {/* Modal Header */}
-            <div className="space-y-2">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Institutional Delivery Verification</span>
-              </div>
-              <h3 className="text-2xl font-black text-white">Live API Delivery Inspector</h3>
-              <p className="text-xs text-slate-400">
-                Verify real-time server automated dispatch and gateway settlement status.
-              </p>
-            </div>
-
-            {/* Gateway Telemetry Box */}
-            <div className="p-4 rounded-xl bg-[#0B0E14] border border-[#1F293D] space-y-2 font-mono text-xs">
-              <div className="flex items-center justify-between text-slate-300">
-                <span className="flex items-center">
-                  <Server className="w-3.5 h-3.5 mr-1.5 text-emerald-400" /> TransFi Settlement Rail
-                </span>
-                <span className="text-emerald-400 font-bold">● CONNECTED (200 OK)</span>
-              </div>
-              <div className="flex items-center justify-between text-slate-300">
-                <span className="flex items-center">
-                  <Zap className="w-3.5 h-3.5 mr-1.5 text-cyan-400" /> Publisher API Dispatch Engine
-                </span>
-                <span className="text-cyan-400 font-bold">● AUTOMATED (18ms)</span>
-              </div>
-              <div className="flex items-center justify-between text-slate-300">
-                <span className="flex items-center">
-                  <Lock className="w-3.5 h-3.5 mr-1.5 text-emerald-400" /> SSL Handshake Protocol
-                </span>
-                <span className="text-emerald-400 font-bold">TLS 1.3 / AES-256</span>
-              </div>
-            </div>
-
-            {/* Search Input */}
-            <form onSubmit={handleVerifyOrder} className="space-y-3">
-              <label className="block text-xs font-semibold text-slate-300">
-                Track Order Reference / Partner Order ID
-              </label>
-              <div className="flex space-x-2">
-                <div className="relative flex-1">
-                  <Search className="w-4 h-4 absolute left-3.5 top-3.5 text-slate-500" />
-                  <input
-                    type="text"
-                    value={searchOrderId}
-                    onChange={(e) => setSearchOrderId(e.target.value)}
-                    placeholder="Enter order ID (e.g. TOPUP_BD_882914)"
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#0B0E14] border border-[#1F293D] text-slate-100 placeholder-slate-600 text-xs focus:outline-none focus:border-emerald-500 font-mono"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-colors shrink-0"
-                >
-                  Verify
-                </button>
-              </div>
-              <p className="text-[11px] text-slate-500">
-                Tip: Leave blank and click &quot;Verify&quot; to inspect recent sample transaction telemetry.
-              </p>
-            </form>
-
-            {/* Verification Result Card */}
-            {lookupResult && (
-              <div className="p-4 rounded-xl bg-[#0B0E14] border border-emerald-500/30 space-y-2.5 text-xs animate-in fade-in duration-150">
-                <div className="flex items-center justify-between pb-2 border-b border-[#1F293D]">
-                  <span className="font-mono text-emerald-400 font-bold">{lookupResult.id}</span>
-                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">
-                    ✓ {lookupResult.status}
-                  </span>
-                </div>
-                <div className="grid grid-cols-2 gap-2 text-slate-400 text-[11px]">
-                  <div>Product: <span className="text-slate-200 font-semibold">{lookupResult.game}</span></div>
-                  <div>Settlement: <span className="text-emerald-400 font-semibold">{lookupResult.amount}</span></div>
-                  <div>Gate: <span className="text-slate-200 font-semibold">{lookupResult.method}</span></div>
-                  <div>Speed: <span className="text-cyan-400 font-bold">{lookupResult.deliveryTime}</span></div>
-                </div>
-              </div>
-            )}
-
-            <div className="pt-2 text-center text-[11px] text-slate-500 flex items-center justify-center space-x-1">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Compliant with International Digital Goods Cross-Border Regulations</span>
-            </div>
-          </div>
-        </div>
-      )}
+      <LiveApiInspectorModal 
+        isOpen={isVerifyModalOpen} 
+        onClose={() => setIsVerifyModalOpen(false)} 
+      />
     </>
   );
 }
