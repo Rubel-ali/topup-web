@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="val-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14080B" />
+      <stop offset="50%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#080B10" />
+    </linearGradient>
+    <radialGradient id="val-glow" cx="72%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#FF4655" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FF4655" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="val-slash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4655" />
+      <stop offset="100%" stop-color="#BD1E2C" />
+    </linearGradient>
+    <linearGradient id="val-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="url(#val-bg)" />
+  <circle cx="490" cy="140" r="230" fill="url(#val-glow)" />
+
+  <!-- Tactical Reticle & Geometry -->
+  <g transform="translate(470, 150)" stroke="#FF4655" stroke-width="1.2" opacity="0.3" fill="none">
+    <circle cx="0" cy="0" r="100" stroke-dasharray="10 8" />
+    <circle cx="0" cy="0" r="60" />
+    <line x1="-120" y1="0" x2="-80" y2="0" stroke-width="2" />
+    <line x1="80" y1="0" x2="120" y2="0" stroke-width="2" />
+    <line x1="0" y1="-120" x2="0" y2="-80" stroke-width="2" />
+    <line x1="0" y1="80" x2="0" y2="120" stroke-width="2" />
+  </g>
+
+  <!-- Valorant Iconic Angular V Slash Logo Glyph -->
+  <g transform="translate(390, 70)" opacity="0.9">
+    <!-- Left Slash Pillar -->
+    <path d="M 0,20 L 70,160 L 105,160 L 35,20 Z" fill="url(#val-slash)" />
+    <!-- Right Upper Wing Point -->
+    <path d="M 65,20 L 140,20 L 115,70 L 40,70 Z" fill="url(#val-slash)" />
+    
+    <!-- Radiant Spark Overlay -->
+    <polygon points="110,65 140,20 170,65 140,110" fill="url(#val-cyan)" opacity="0.8" />
+  </g>
+
+  <!-- Riot Fist Symbol Background Accent -->
+  <g transform="translate(230, 95)" opacity="0.2">
+    <circle cx="50" cy="50" r="45" fill="#FF4655" />
+  </g>
+
+  <!-- Typography Brand Accent -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="85" height="22" rx="4" fill="#FF4655" fill-opacity="0.15" stroke="#FF4655" stroke-opacity="0.4" />
+    <text x="42" y="15" fill="#FF4655" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle" letter-spacing="1.5">RIOT GAMES</text>
+    
+    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" letter-spacing="0.5">VALORANT</text>
+    <text x="0" y="95" fill="#00F5D4" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="2.5">VALORANT POINTS (VP) • RIOT ID</text>
+  </g>
+
+  <!-- Vignette -->
+  <rect y="220" width="640" height="140" fill="url(#val-bg)" opacity="0.85" />
+</svg>
+
