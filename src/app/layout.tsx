@@ -110,7 +110,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <body className="min-h-screen flex flex-col bg-[#0B0E14] text-gray-100 antialiased selection:bg-emerald-500 selection:text-black">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrg) }}
@@ -119,8 +119,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebsite) }}
         />
-      </head>
-      <body className="min-h-screen flex flex-col bg-[#0B0E14] text-gray-100 antialiased selection:bg-emerald-500 selection:text-black">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
