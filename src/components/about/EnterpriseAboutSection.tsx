@@ -41,7 +41,7 @@ export default function EnterpriseAboutSection() {
   };
 
   const handleCopyLicense = () => {
-    navigator.clipboard.writeText('145/2025-27');
+    navigator.clipboard.writeText('145/2026-27');
     setCopiedLicense(true);
     setTimeout(() => setCopiedLicense(false), 2500);
   };
@@ -67,7 +67,7 @@ export default function EnterpriseAboutSection() {
         
         <div className="inline-flex items-center space-x-2 text-xs text-slate-400 font-medium bg-[#0F1523]/80 border border-white/10 px-3 py-1.5 rounded-xl">
           <Shield className="w-3.5 h-3.5 text-emerald-400" />
-          <span>Govt Trade Reg: <strong className="text-white font-semibold tabular-nums">145/2025-27</strong></span>
+          <span>Govt Trade Reg: <strong className="text-white font-semibold tabular-nums">145/2026-27</strong></span>
         </div>
       </div>
 
@@ -199,7 +199,7 @@ export default function EnterpriseAboutSection() {
           <div className="pt-3 border-t border-white/5 flex items-center justify-between text-[11px] text-emerald-400 font-medium">
             <span className="flex items-center gap-1.5">
               <Check className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Trade Reg: 145/2025-27</span>
+              <span>Trade Reg: 145/2026-27</span>
             </span>
             <span className="text-slate-400">DNCRP Aligned</span>
           </div>
@@ -281,14 +281,14 @@ export default function EnterpriseAboutSection() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-base font-extrabold text-emerald-400 tabular-nums">
-                145/2025-27
+                145/2026-27
               </span>
               <span className="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-semibold border border-emerald-500/25">
                 Active & Verified
               </span>
             </div>
             <div className="text-xs text-slate-400">
-              ক্রমিক নং: ১৪৫ (বই নং: ১৪৫/২০২৫-২৭)
+              ক্রমিক নং: ১৪৫ (বই নং: ১৪৫/২০২৬-২৭)
             </div>
           </div>
 
@@ -324,7 +324,7 @@ export default function EnterpriseAboutSection() {
               Registered Commercial Office
             </span>
             <div className="text-sm font-medium text-slate-100">
-              Darigata, Bangabari, Gomastapur
+              Daripata, Bangabari, Gomastapur
             </div>
             <div className="text-xs text-slate-400">
               চাঁপাইনবাবগঞ্জ - ৬৩২০, রাজশাহী বিভাগ, বাংলাদেশ
@@ -341,7 +341,7 @@ export default function EnterpriseAboutSection() {
               <span>Valid Through June 30, 2027</span>
             </div>
             <div className="text-xs text-slate-400">
-              মেয়াদকাল: অর্থ বছর ২০২৫ - ২০২৭
+              মেয়াদকাল: অর্থ বছর ২০২৬ - ২০২৭
             </div>
           </div>
 
@@ -392,7 +392,7 @@ export default function EnterpriseAboutSection() {
                     Government Trade License Certificate
                   </h3>
                   <p className="text-[11px] text-slate-400">
-                    Trade Reg: 145/2025-27 • 2 No. Bangabari Union Parishad
+                    Trade Reg: 145/2026-27 • 2 No. Bangabari Union Parishad
                   </p>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default function EnterpriseAboutSection() {
               <div className="flex items-center space-x-2">
                 <a
                   href="/legal/trade-license.jpg"
-                  download="ApexTopup-Trade-License-145-2025-27.jpg"
+                  download="ApexTopup-Trade-License-145-2026-27.jpg"
                   className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 text-xs font-semibold transition-all"
                 >
                   <Download className="w-3.5 h-3.5 text-emerald-400" />

@@ -35,7 +35,7 @@ export default function RefundPolicySection() {
   const [copiedPhone, setCopiedPhone] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('supportapextopupbd@gmail.com');
+    navigator.clipboard.writeText('support@apextopupbd.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2500);
   };
@@ -67,7 +67,7 @@ export default function RefundPolicySection() {
         
         <div className="inline-flex items-center space-x-2 text-xs text-slate-400 font-medium bg-[#0F1523]/80 border border-white/10 px-3 py-1.5 rounded-xl">
           <Scale className="w-3.5 h-3.5 text-emerald-400" />
-          <span>Govt Trade Reg: <strong className="text-white font-semibold">145/2025-27</strong></span>
+          <span>Govt Trade Reg: <strong className="text-white font-semibold">145/2026-27</strong></span>
         </div>
       </div>
 
@@ -517,7 +517,7 @@ export default function RefundPolicySection() {
                 <div className="text-xs text-slate-400 font-medium">Official Dispute Desk:</div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm sm:text-base font-bold text-white tracking-tight select-all">
-                    supportapextopupbd@gmail.com
+                    support@apextopupbd.com
                   </span>
                   <button
                     type="button"
@@ -569,7 +569,7 @@ export default function RefundPolicySection() {
               {/* Fast Action Buttons */}
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <a
-                  href="mailto:supportapextopupbd@gmail.com?subject=Dispute%20Claim%20Submission"
+                  href="mailto:support@apextopupbd.com?subject=Dispute%20Claim%20Submission"
                   className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-400 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-emerald-500/20 active:scale-98 flex items-center justify-center space-x-2 text-center"
                 >
                   <Mail className="w-4 h-4 text-slate-950 stroke-[2.5]" />
@@ -602,7 +602,7 @@ export default function RefundPolicySection() {
           <div className="flex items-center space-x-3 text-[11px]">
             <span className="text-emerald-400 font-semibold">DNCRP Compliant</span>
             <span>•</span>
-            <span className="text-slate-400">Govt Trade Reg: 145/2025-27</span>
+            <span className="text-slate-400">Govt Trade Reg: 145/2026-27</span>
           </div>
         </div>
 

@@ -189,7 +189,7 @@ export default function DigitalStoreFooter() {
               <li className="flex items-start space-x-3 text-slate-300">
                 <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  Darigata, Bangabari, Gomastapur,<br />
+                  Daripata, Bangabari, Gomastapur,<br />
                   Chapainawabganj-6320, Bangladesh
                 </span>
               </li>
@@ -199,12 +199,12 @@ export default function DigitalStoreFooter() {
               </li>
               <li className="flex items-center space-x-3 text-slate-300">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>supportapextopupbd@gmail.com</span>
+                <span>support@apextopupbd.com</span>
               </li>
               <li className="pt-1">
                 <div className="flex items-center space-x-2 text-xs bg-[#0F1420] border border-white/10 px-3 py-1.5 rounded-lg text-slate-300 w-fit">
                   <Building2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Govt Trade Reg: <strong className="text-emerald-400 font-semibold">145/2025-27</strong></span>
+                  <span>Govt Trade Reg: <strong className="text-emerald-400 font-semibold">145/2026-27</strong></span>
                 </div>
               </li>
             </ul>
@@ -274,7 +274,7 @@ export default function DigitalStoreFooter() {
             © {new Date().getFullYear()} Apex Topup Digital Technologies. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 text-slate-400 text-[11px]">
-            <span>Govt Trade License No: <strong className="text-emerald-400 font-semibold">145/2025-27</strong></span>
+            <span>Govt Trade License No: <strong className="text-emerald-400 font-semibold">145/2026-27</strong></span>
             <span>•</span>
             <span>PCI-DSS Validated Gateway Rails</span>
             <span>•</span>

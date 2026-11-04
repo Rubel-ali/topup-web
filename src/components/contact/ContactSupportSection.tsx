@@ -49,7 +49,7 @@ export default function ContactSupportSection() {
   const [submittedTicket, setSubmittedTicket] = useState<{ id: string } | null>(null);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('supportapextopupbd@gmail.com');
+    navigator.clipboard.writeText('support@apextopupbd.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2500);
   };
@@ -61,7 +61,7 @@ export default function ContactSupportSection() {
   };
 
   const handleCopyAddress = () => {
-    navigator.clipboard.writeText('Darigata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh');
+    navigator.clipboard.writeText('Daripata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh');
     setCopiedAddress(true);
     setTimeout(() => setCopiedAddress(false), 2500);
   };
@@ -222,10 +222,10 @@ export default function ContactSupportSection() {
 
             <div className="flex items-center justify-between pt-1 border-t border-white/5">
               <a 
-                href="mailto:supportapextopupbd@gmail.com" 
+                href="mailto:support@apextopupbd.com" 
                 className="text-emerald-400 font-medium text-xs hover:underline truncate max-w-[190px]"
               >
-                supportapextopupbd@gmail.com
+                support@apextopupbd.com
               </a>
               <button
                 type="button"
@@ -254,14 +254,14 @@ export default function ContactSupportSection() {
                 <MapPin className="w-5 h-5 text-emerald-400" />
               </div>
               <span className="text-[10px] font-semibold text-slate-300 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">
-                Trade Reg: 145/2025-27
+                Trade Reg: 145/2026-27
               </span>
             </div>
             
             <div>
               <h3 className="font-bold text-white text-sm">Corporate Headquarters</h3>
               <p className="text-xs text-slate-400 mt-0.5 leading-relaxed font-sans">
-                Darigata, Bangabari, Gomastapur,<br />
+                Daripata, Bangabari, Gomastapur,<br />
                 Chapainawabganj-6320, Bangladesh.
               </p>
             </div>
@@ -616,7 +616,7 @@ export default function ContactSupportSection() {
         </div>
 
         <div className="flex items-center space-x-3 text-[11px]">
-          <span className="text-emerald-400 font-medium">Govt Trade Reg: 145/2025-27</span>
+          <span className="text-emerald-400 font-medium">Govt Trade Reg: 145/2026-27</span>
           <span>•</span>
           <span className="text-slate-400">24/7 SLA Guarantee</span>
         </div>

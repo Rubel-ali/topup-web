@@ -506,7 +506,7 @@ export default function ProductCheckoutFlow({ game }: ProductCheckoutFlowProps) 
             <div className="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
               <span className="flex items-center gap-1">
                 <Building2 className="w-3 h-3 text-emerald-400" />
-                <span>Trade Reg: 145/2025-27</span>
+                <span>Trade Reg: 145/2026-27</span>
               </span>
               <span className="text-emerald-400 font-medium">BFIU Aligned</span>
             </div>

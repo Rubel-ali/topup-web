@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <section className="space-y-2">
           <h2 className="text-base font-bold text-white">1. Information We Collect</h2>
           <p>
-            When you purchase gaming credits or top-ups on <strong>Apex Topup Digital Technologies</strong> (Govt. Trade Reg: <strong>145/2025-27</strong>), we collect minimal information necessary to fulfill your order:
+            When you purchase gaming credits or top-ups on <strong>Apex Topup Digital Technologies</strong> (Govt. Trade Reg: <strong>145/2026-27</strong>), we collect minimal information necessary to fulfill your order:
           </p>
           <ul className="list-disc list-inside space-y-1 text-xs text-gray-400 pl-2">
             <li>Gaming Identifier: Player ID (UID), Character ID, or Zone ID.</li>
@@ -63,10 +63,10 @@ export default function PrivacyPage() {
         <section className="space-y-2">
           <h2 className="text-base font-bold text-white">5. Contact Data Officer</h2>
           <p>
-            If you have questions regarding your data or wish to request deletion of order history, please reach out to our privacy desk at: <strong>supportapextopupbd@gmail.com</strong>.
+            If you have questions regarding your data or wish to request deletion of order history, please reach out to our privacy desk at: <strong>support@apextopupbd.com</strong>.
           </p>
           <p className="text-xs text-slate-400">
-            Registered Office: Darigata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh.
+            Registered Office: Daripata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh.
           </p>
         </section>
       </div>

@@ -211,7 +211,7 @@ export default function ConsumerProtectionSection() {
         <div className="flex items-center gap-2">
           <Building2 className="w-4 h-4 text-emerald-400 shrink-0" />
           <span className="text-slate-300">
-            Registered Entity: <strong className="text-white">Apex Topup Digital Technologies</strong> (Govt Trade License: <span className="font-mono text-emerald-400 font-semibold">145/2025-27</span>)
+            Registered Entity: <strong className="text-white">Apex Topup Digital Technologies</strong> (Govt Trade License: <span className="font-mono text-emerald-400 font-semibold">145/2026-27</span>)
           </span>
         </div>
         <div className="flex items-center gap-3 text-[11px] font-mono text-slate-400">

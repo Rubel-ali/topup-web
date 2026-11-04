@@ -88,13 +88,13 @@ export default function TermsOfServiceSection() {
   };
 
   const handleCopyAddress = () => {
-    navigator.clipboard.writeText('Darigata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh');
+    navigator.clipboard.writeText('Daripata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh');
     setCopiedAddress(true);
     setTimeout(() => setCopiedAddress(false), 2500);
   };
 
   const handleCopyLicense = () => {
-    navigator.clipboard.writeText('145/2025-27');
+    navigator.clipboard.writeText('145/2026-27');
     setCopiedLicense(true);
     setTimeout(() => setCopiedLicense(false), 2500);
   };
@@ -163,7 +163,7 @@ export default function TermsOfServiceSection() {
         <div className="pt-2 flex flex-wrap items-center justify-center gap-2 text-xs">
           <span className="px-3 py-1 rounded-full bg-[#0F1523]/90 border border-white/10 text-slate-300 flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Govt Trade Reg: <strong className="text-emerald-400 font-semibold">145/2025-27</strong></span>
+            <span>Govt Trade Reg: <strong className="text-emerald-400 font-semibold">145/2026-27</strong></span>
           </span>
           <span className="px-3 py-1 rounded-full bg-[#0F1523]/90 border border-white/10 text-slate-300 flex items-center gap-1.5">
             <Building2 className="w-3.5 h-3.5 text-sky-400" />
@@ -234,7 +234,7 @@ export default function TermsOfServiceSection() {
             <div className="p-2.5 rounded-xl bg-[#090D15] border border-white/5 space-y-1.5 text-[11px]">
               <div className="flex justify-between items-center text-slate-400">
                 <span>Trade License:</span>
-                <span className="text-emerald-400 font-bold font-sans">145/2025-27</span>
+                <span className="text-emerald-400 font-bold font-sans">145/2026-27</span>
               </div>
               <div className="flex justify-between items-center text-slate-400">
                 <span>Registration Authority:</span>
@@ -289,7 +289,7 @@ export default function TermsOfServiceSection() {
 
             <div className="space-y-3 text-xs sm:text-sm leading-relaxed text-slate-300">
               <p>
-                By accessing, browsing, or utilizing the electronic services offered by <strong>Apex Topup Digital Technologies</strong> (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), operating under Bangladesh Government Trade License No. <strong className="text-white">145/2025-27</strong>, you irrevocably agree to be bound by these binding Terms of Service and our accompanying Consumer Protection Policies.
+                By accessing, browsing, or utilizing the electronic services offered by <strong>Apex Topup Digital Technologies</strong> (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), operating under Bangladesh Government Trade License No. <strong className="text-white">145/2026-27</strong>, you irrevocably agree to be bound by these binding Terms of Service and our accompanying Consumer Protection Policies.
               </p>
               <p>
                 If you do not agree with or cannot comply with any provision articulated within these terms, you are expressly prohibited from utilizing the website, ordering gaming credits, or initiating electronic checkout sessions. Continued access constitutes full legal consent.
@@ -533,7 +533,7 @@ export default function TermsOfServiceSection() {
                   <span className="text-slate-400 font-medium block">Registered Operating Entity:</span>
                   <span className="text-white font-bold text-sm block">Apex Topup Digital Technologies</span>
                   <span className="text-slate-400 block pt-0.5 leading-relaxed">
-                    Darigata, Bangabari, Gomastapur,<br />
+                    Daripata, Bangabari, Gomastapur,<br />
                     Chapainawabganj - 6320, Bangladesh.
                   </span>
                 </div>
@@ -541,7 +541,7 @@ export default function TermsOfServiceSection() {
                 <div className="space-y-1 sm:border-l sm:border-white/5 sm:pl-4">
                   <span className="text-slate-400 font-medium block">Government Trade Authorization:</span>
                   <span className="text-emerald-400 font-bold text-sm block tabular-nums">
-                    Trade Reg: 145/2025-27
+                    Trade Reg: 145/2026-27
                   </span>
                   <span className="text-slate-400 block pt-0.5 leading-relaxed">
                     2 No. Bangabari Union Parishad Registry,<br />
