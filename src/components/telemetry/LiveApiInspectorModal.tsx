@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ShieldCheck, 
   Server, 
@@ -82,30 +81,22 @@ export default function LiveApiInspectorModal({
     }
   };
 
-  return (
-    <AnimatePresence>
-      {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
-          
-          {/* Backdrop */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            onClick={onClose}
-            className="fixed inset-0 bg-black/85 backdrop-blur-xl"
-            aria-hidden="true"
-          />
+  if (!isOpen) return null;
 
-          {/* Modal Container */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95, y: 15 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 15 }}
-            transition={{ duration: 0.25, ease: 'easeOut' }}
-            className="relative w-full max-w-xl rounded-3xl bg-[#0E131F]/95 backdrop-blur-2xl border border-white/10 p-6 sm:p-7 shadow-2xl shadow-black/90 space-y-6 text-slate-100 select-none font-sans z-10 my-8"
-          >
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto animate-in fade-in duration-200">
+      
+      {/* Backdrop */}
+      <div 
+        onClick={onClose}
+        className="fixed inset-0 bg-black/85 backdrop-blur-xl transition-opacity duration-200"
+        aria-hidden="true"
+      />
+
+      {/* Modal Container */}
+      <div 
+        className="relative w-full max-w-xl rounded-3xl bg-[#0E131F]/95 backdrop-blur-2xl border border-white/10 p-6 sm:p-7 shadow-2xl shadow-black/90 space-y-6 text-slate-100 select-none font-sans z-10 my-8 transition-all duration-200"
+      >
             
             {/* Detached Close Button */}
             <button
@@ -220,16 +211,9 @@ export default function LiveApiInspectorModal({
             </form>
 
             {/* ─── INTERACTIVE LIVE TELEMETRY RESULT CARD (DYNAMIC STATE) ─── */}
-            <AnimatePresence>
-              {telemetryResult && (
-                <motion.div 
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.25 }}
-                  className="overflow-hidden"
-                >
-                  <div className="p-4 rounded-2xl bg-[#090D15] border border-emerald-500/30 space-y-3 text-xs shadow-inner">
+            {telemetryResult && (
+              <div className="overflow-hidden transition-all duration-200">
+                <div className="p-4 rounded-2xl bg-[#090D15] border border-emerald-500/30 space-y-3 text-xs shadow-inner">
                     
                     {/* Top Status Strip */}
                     <div className="flex items-center justify-between pb-2.5 border-b border-white/10">
@@ -300,9 +284,8 @@ export default function LiveApiInspectorModal({
                     </div>
 
                   </div>
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
 
             {/* ─── COMPLIANCE & CROSS-BORDER FOOTNOTE ─── */}
             <div className="pt-2 text-center text-xs text-slate-400 flex items-center justify-center space-x-1.5 border-t border-white/5">
@@ -310,11 +293,9 @@ export default function LiveApiInspectorModal({
               <span>Compliant with International Digital Goods Cross-Border Regulations & BFIU Guidelines.</span>
             </div>
 
-          </motion.div>
+          </div>
 
         </div>
-      )}
-    </AnimatePresence>
   );
 }
 

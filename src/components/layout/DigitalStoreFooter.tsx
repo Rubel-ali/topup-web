@@ -171,11 +171,11 @@ export default function DigitalStoreFooter() {
               </li>
               <li className="flex items-center space-x-3 text-slate-300">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>+880 1700-000000</span>
+                <span>+880 1571-086652</span>
               </li>
               <li className="flex items-center space-x-3 text-slate-300">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>support@apextopupbd.com</span>
+                <span>supportapextopupbd@gmail.com</span>
               </li>
               <li className="pt-1">
                 <div className="flex items-center space-x-2 text-xs bg-[#0F1420] border border-white/10 px-3 py-1.5 rounded-lg text-slate-300 w-fit">

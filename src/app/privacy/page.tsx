@@ -53,7 +53,7 @@ export default function PrivacyPage() {
         <section className="space-y-2">
           <h2 className="text-base font-bold text-white">5. Contact Data Officer</h2>
           <p>
-            If you have questions regarding your data or wish to request deletion of order history, please reach out to our privacy desk at: <strong>support@apextopupbd.com</strong>.
+            If you have questions regarding your data or wish to request deletion of order history, please reach out to our privacy desk at: <strong>supportapextopupbd@gmail.com</strong>.
           </p>
           <p className="text-xs text-slate-400">
             Registered Office: Darigata, Bangabari, Gomastapur, Chapainawabganj-6320, Bangladesh.

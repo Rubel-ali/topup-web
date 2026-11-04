@@ -35,13 +35,13 @@ export default function RefundPolicySection() {
   const [copiedPhone, setCopiedPhone] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('refunds@apextopupbd.com');
+    navigator.clipboard.writeText('supportapextopupbd@gmail.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2500);
   };
 
   const handleCopyPhone = () => {
-    navigator.clipboard.writeText('+8801700000000');
+    navigator.clipboard.writeText('01571086652');
     setCopiedPhone(true);
     setTimeout(() => setCopiedPhone(false), 2500);
   };
@@ -517,7 +517,7 @@ export default function RefundPolicySection() {
                 <div className="text-xs text-slate-400 font-medium">Official Dispute Desk:</div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm sm:text-base font-bold text-white tracking-tight select-all">
-                    refunds@apextopupbd.com
+                    supportapextopupbd@gmail.com
                   </span>
                   <button
                     type="button"
@@ -544,7 +544,7 @@ export default function RefundPolicySection() {
                 <div className="text-xs text-slate-400 font-medium">Live Customer Care Line:</div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm sm:text-base font-bold text-white tracking-tight select-all">
-                    +880 1700-000000
+                    +880 1571-086652
                   </span>
                   <button
                     type="button"
@@ -569,7 +569,7 @@ export default function RefundPolicySection() {
               {/* Fast Action Buttons */}
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <a
-                  href="mailto:refunds@apextopupbd.com?subject=Dispute%20Claim%20Submission"
+                  href="mailto:supportapextopupbd@gmail.com?subject=Dispute%20Claim%20Submission"
                   className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 via-emerald-400 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-emerald-500/20 active:scale-98 flex items-center justify-center space-x-2 text-center"
                 >
                   <Mail className="w-4 h-4 text-slate-950 stroke-[2.5]" />

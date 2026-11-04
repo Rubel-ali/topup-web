@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const partnerOrderId = `TOPUP_${Date.now()}_${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
     const apiUrl = process.env.TRANSFI_API_URL || 'https://api-sandbox.transfi.com';
     const mid = process.env.TRANSFI_MID || 'SBTSBZ_NA_NA';
-    const username = process.env.TRANSFI_USERNAME || 'sunbet365';
+    const username = process.env.TRANSFI_USERNAME || 'apextopup';
     const password = process.env.TRANSFI_PASSWORD || 'CkaB1IR0nfkJgW';
     const payoutWallet = process.env.ADMIN_PAYOUT_WALLET_ADDRESS || '0x380B3096586af5a68C9cAd348c2621Fe3BA99e76';
 

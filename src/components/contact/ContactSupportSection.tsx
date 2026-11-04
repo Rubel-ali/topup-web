@@ -49,13 +49,13 @@ export default function ContactSupportSection() {
   const [submittedTicket, setSubmittedTicket] = useState<{ id: string } | null>(null);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('support@apextopupbd.com');
+    navigator.clipboard.writeText('supportapextopupbd@gmail.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2500);
   };
 
   const handleCopyPhone = () => {
-    navigator.clipboard.writeText('+8801700000000');
+    navigator.clipboard.writeText('01571086652');
     setCopiedPhone(true);
     setTimeout(() => setCopiedPhone(false), 2500);
   };
@@ -179,10 +179,10 @@ export default function ContactSupportSection() {
 
             <div className="flex items-center justify-between pt-1 border-t border-white/5">
               <a 
-                href="tel:+8801700000000" 
+                href="tel:+8801571086652" 
                 className="text-emerald-400 font-extrabold text-sm tabular-nums hover:underline flex items-center gap-1"
               >
-                <span>+880 1700-000000</span>
+                <span>+880 1571-086652</span>
               </a>
               <button
                 type="button"
@@ -222,10 +222,10 @@ export default function ContactSupportSection() {
 
             <div className="flex items-center justify-between pt-1 border-t border-white/5">
               <a 
-                href="mailto:support@apextopupbd.com" 
+                href="mailto:supportapextopupbd@gmail.com" 
                 className="text-emerald-400 font-medium text-xs hover:underline truncate max-w-[190px]"
               >
-                support@apextopupbd.com
+                supportapextopupbd@gmail.com
               </a>
               <button
                 type="button"
@@ -296,7 +296,7 @@ export default function ContactSupportSection() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2.5">
               <a
-                href="https://wa.me/8801700000000"
+                href="https://wa.me/8801571086652"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/25 text-emerald-300 text-xs font-semibold flex items-center justify-between transition-all group"

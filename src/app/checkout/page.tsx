@@ -17,7 +17,7 @@ function CheckoutContent() {
   const [isIframeLoading, setIsIframeLoading] = useState(true);
 
   // Fallback hosted checkout
-  const finalPayUrl = checkoutUrl || `https://sandbox-buy.transfi.com/?apiKey=sunbet365&walletAddress=0x380B3096586af5a68C9cAd348c2621Fe3BA99e76&fiatCurrency=BDT&cryptoCurrency=USDT&fiatAmount=${amount}&partnerOrderId=${orderId}`;
+  const finalPayUrl = checkoutUrl || `https://sandbox-buy.transfi.com/?apiKey=apextopup&walletAddress=0x380B3096586af5a68C9cAd348c2621Fe3BA99e76&fiatCurrency=BDT&cryptoCurrency=USDT&fiatAmount=${amount}&partnerOrderId=${orderId}`;
 
   // Listen for Gateway events
   useEffect(() => {
