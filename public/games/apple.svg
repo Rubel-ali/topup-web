@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ap-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181B" />
+      <stop offset="45%" stop-color="#0E121B" />
+      <stop offset="100%" stop-color="#070A10" />
+    </linearGradient>
+    <radialGradient id="ap-glow" cx="70%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#A1A1AA" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#A1A1AA" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ap-rainbow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="35%" stop-color="#A78BFA" />
+      <stop offset="70%" stop-color="#F472B6" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+    <filter id="ap-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="url(#ap-bg)" />
+  <circle cx="480" cy="120" r="220" fill="url(#ap-glow)" />
+
+  <!-- Smooth Ambient Circle Glow -->
+  <circle cx="480" cy="120" r="100" fill="#38BDF8" opacity="0.15" filter="url(#ap-blur)" />
+
+  <!-- Apple Silhouette Glyph -->
+  <g transform="translate(420, 50)">
+    <!-- Apple Leaf -->
+    <path d="M50 15 C55 5 70 0 75 0 C75 10 70 25 55 28 C50 25 50 18 50 15 Z" fill="url(#ap-rainbow)" />
+    <!-- Apple Body with Bite -->
+    <path d="M50 30 C30 30 15 45 15 70 C15 105 40 135 55 135 C65 135 70 128 85 128 C100 128 105 135 115 135 C130 135 155 105 155 70 C140 70 130 60 130 45 C130 32 140 25 145 20 C135 15 120 18 115 22 C105 28 95 30 85 30 C75 30 65 25 50 30 Z" fill="url(#ap-rainbow)" opacity="0.9" />
+  </g>
+
+  <!-- App Store / iTunes Gift Badge Floating Icon -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="70" height="70" rx="18" fill="#18181B" stroke="#A1A1AA" stroke-width="2" />
+    <!-- Music Note / Gift Bow -->
+    <polygon points="35,15 48,22 48,45 35,38" fill="url(#ap-rainbow)" />
+    <circle cx="30" cy="45" r="8" fill="url(#ap-rainbow)" />
+  </g>
+
+  <!-- Fine Vector Starbursts -->
+  <g transform="translate(530, 80)" stroke="#A1A1AA" stroke-width="1" opacity="0.4" fill="none">
+    <circle cx="0" cy="0" r="30" stroke-dasharray="4 4" />
+    <circle cx="0" cy="0" r="15" />
+  </g>
+
+  <!-- Typography Brand Accent -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="85" height="22" rx="4" fill="#A1A1AA" fill-opacity="0.15" stroke="#A1A1AA" stroke-opacity="0.3" />
+    <text x="42" y="15" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle" letter-spacing="1.5">APPLE INC.</text>
+    
+    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" letter-spacing="0.5">APPLE GIFT CARD</text>
+    <text x="0" y="95" fill="#A1A1AA" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="3">APP STORE &amp; ITUNES</text>
+  </g>
+
+  <!-- Bottom Vignette -->
+  <rect y="220" width="640" height="140" fill="url(#ap-bg)" opacity="0.85" />
+</svg>

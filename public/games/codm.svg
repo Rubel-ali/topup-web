@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cod-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12160E" />
+      <stop offset="45%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#070A10" />
+    </linearGradient>
+    <radialGradient id="cod-glow" cx="70%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#EAB308" stop-opacity="0.38" />
+      <stop offset="50%" stop-color="#84CC16" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#EAB308" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cod-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#A16207" />
+    </linearGradient>
+    <linearGradient id="cod-shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <filter id="cod-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="url(#cod-bg)" />
+  <circle cx="480" cy="120" r="210" fill="url(#cod-glow)" />
+
+  <!-- Military Camo Lines -->
+  <g opacity="0.08" stroke="#EAB308" stroke-width="1.5">
+    <line x1="0" y1="90" x2="640" y2="90" />
+    <line x1="0" y1="180" x2="640" y2="180" />
+    <line x1="0" y1="270" x2="640" y2="270" />
+    <line x1="160" y1="0" x2="160" y2="360" stroke-dasharray="8 8" />
+    <line x1="320" y1="0" x2="320" y2="360" stroke-dasharray="8 8" />
+    <line x1="480" y1="0" x2="480" y2="360" stroke-dasharray="8 8" />
+  </g>
+
+  <!-- Tactical Reticle -->
+  <g transform="translate(480, 130)" stroke="#EAB308" stroke-width="2" opacity="0.4" fill="none">
+    <circle cx="0" cy="0" r="70" />
+    <circle cx="0" cy="0" r="45" stroke-dasharray="12 8" />
+    <circle cx="0" cy="0" r="10" fill="#EAB308" fill-opacity="0.3" />
+    <line x1="-90" y1="0" x2="-60" y2="0" stroke-width="3" />
+    <line x1="60" y1="0" x2="90" y2="0" stroke-width="3" />
+    <line x1="0" y1="-90" x2="0" y2="-60" stroke-width="3" />
+    <line x1="0" y1="60" x2="0" y2="90" stroke-width="3" />
+  </g>
+
+  <!-- Tactical Shield / Crest Motif -->
+  <g transform="translate(390, 70)">
+    <path d="M40 0 L80 20 L80 70 C80 110 40 130 40 130 C40 130 0 110 0 70 L0 20 Z" fill="url(#cod-shield)" stroke="#EAB308" stroke-width="3" />
+    <!-- Skull Star / Insignia inside Shield -->
+    <polygon points="40,25 45,40 60,40 47,50 52,65 40,55 28,65 33,50 20,40 35,40" fill="url(#cod-gold)" />
+    <path d="M25 80 L55 80 L40 100 Z" fill="#94A3B8" opacity="0.6" />
+  </g>
+
+  <!-- COD Points (CP) Coin Token -->
+  <g transform="translate(320, 100)">
+    <circle cx="35" cy="35" r="32" fill="url(#cod-gold)" stroke="#FEF08A" stroke-width="2.5" />
+    <circle cx="35" cy="35" r="24" fill="#854D0E" opacity="0.4" />
+    <text x="35" y="43" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" text-anchor="middle">CP</text>
+  </g>
+
+  <!-- Typography Brand Accent -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="90" height="22" rx="4" fill="#EAB308" fill-opacity="0.2" stroke="#EAB308" stroke-opacity="0.4" />
+    <text x="45" y="15" fill="#FACC15" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" text-anchor="middle" letter-spacing="1.5">ACTIVISION</text>
+    
+    <text x="0" y="65" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" letter-spacing="0.5">CALL OF DUTY</text>
+    <text x="0" y="95" fill="#EAB308" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="3">MOBILE CP STORE</text>
+  </g>
+
+  <!-- Bottom Vignette -->
+  <rect y="220" width="640" height="140" fill="url(#cod-bg)" opacity="0.85" />
+</svg>

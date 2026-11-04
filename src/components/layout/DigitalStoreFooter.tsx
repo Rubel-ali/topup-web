@@ -104,6 +104,30 @@ export default function DigitalStoreFooter() {
                   Valorant Points (VP)
                 </Link>
               </li>
+              <li>
+                <Link 
+                  href="/topup/roblox" 
+                  className="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block text-slate-400"
+                >
+                  Roblox Robux Store
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/topup/codm" 
+                  className="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block text-slate-400"
+                >
+                  Call of Duty Mobile CP
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/topup/clashofclans" 
+                  className="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block text-slate-400"
+                >
+                  Clash of Clans Gems
+                </Link>
+              </li>
             </ul>
           </div>
 
