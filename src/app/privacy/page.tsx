@@ -1,4 +1,14 @@
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy & Data Protection Policy | ApexTopup BD',
+  description:
+    'Comprehensive data confidentiality, privacy protection, and encrypted transaction policies for customers of Apex Topup Digital Technologies.',
+  alternates: {
+    canonical: '/privacy',
+  },
+};
 
 export default function PrivacyPage() {
   return (
