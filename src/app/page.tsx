@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import DigitalStoreHero from '@/components/home/DigitalStoreHero';
 import GameCatalogSection from '@/components/catalog/GameCatalogSection';
